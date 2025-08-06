@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function AddTransaction({ onAdd }) {
   const [showBox, setShowBox] = useState(false);
-  const [type, setType] = useState("add");
+  const [type, setType] = useState("spend");
   const [category, setCategory] = useState("Food");
   const [amount, setAmount] = useState("");
 
@@ -48,6 +48,8 @@ export default function AddTransaction({ onAdd }) {
             >
               <option>Food</option>
               <option>Travel</option>
+              <option>Education</option>
+              <option>Vegetables</option>
               <option>Groceries</option>
               <option>Drinks</option>
               <option>Others</option>
